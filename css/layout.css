@@ -74,7 +74,19 @@ body {
   gap: 34px;
 }
 
+/* About GIS Section */
 
+#GIS-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.GIS-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
 
 
 /* Project Section */
