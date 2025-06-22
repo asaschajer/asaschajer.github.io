@@ -152,6 +152,30 @@ body {
   gap: 34px;
 }
 
+#Target {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Target-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+#Indicator-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Indicator-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
     /* Project Gallery */
 
     #project-gallery {
