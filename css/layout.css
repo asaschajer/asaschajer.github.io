@@ -57,6 +57,26 @@ body {
   flex-basis: 50%;
 }
 
+/* GIS Header */
+
+#GIS-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#GIS-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: 50%;
+}
+
+.GIS-section-image {
+  width: 100%;
+  height: auto;
+}
+
 
 
 
