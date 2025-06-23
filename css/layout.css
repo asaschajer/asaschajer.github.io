@@ -65,11 +65,11 @@ body {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  flex-basis: 50%;
+  flex-basis: auto;
 }
 
 .portfolio-header-image {
-  width: 50%;
+  width: 25%;
   height: 50%;
 }
 
