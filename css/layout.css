@@ -59,7 +59,11 @@ body {
 
 /* GIS Header */
 
-
+#portfolio-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 
 #GIS-header-image-container {
   display: flex;
