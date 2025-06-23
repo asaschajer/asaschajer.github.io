@@ -60,22 +60,22 @@ body {
 /* GIS Header */
 
 #GIS-header {
-  width: 75vw;
-  margin: 0;
-  padding: 0;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 #GIS-header-image-container {
-  width: 75vw;
-  margin: 0;
-  padding: 0;
+  width: 100%;
 }
 
 #GIS-header-image-container > .GIS-header-image {
-  width: 75vw;
+  width: 100%;
   height: auto;
+  max-width: 100%; /* ensure it doesn't overflow */
   display: block;
+  border-radius: 8px; /* optional: soft corners */
 }
 
 /* About Section */
