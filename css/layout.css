@@ -59,7 +59,7 @@ body {
 
 /* GIS Header */
 
-#portfolio-header {
+#GIS-header {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -72,8 +72,8 @@ body {
   flex-basis: auto;
 }
 
-.portfolio-header-image {
-  width: 50%px;
+.GIS-header-image {
+  width: 50%;
   height: 100%;
 }
 
