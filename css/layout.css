@@ -66,13 +66,11 @@ body {
   flex-direction: row;
   gap: 10px;
   flex-basis: auto;
-  margin:0 auto
 }
 
 .portfolio-header-image {
-  width: 25%;
-  height: 50%;
-  margin:0 auto
+  width: 200px;
+  height: 200px;
 }
 
 /* About Section */
