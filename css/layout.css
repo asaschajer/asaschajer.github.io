@@ -60,20 +60,20 @@ body {
 /* GIS Header */
 
 #GIS-header {
-  width: 100vw;
+  width: 75vw;
   margin: 0;
   padding: 0;
   display: block;
 }
 
 #GIS-header-image-container {
-  width: 100vw;
+  width: 75vw;
   margin: 0;
   padding: 0;
 }
 
 #GIS-header-image-container > .GIS-header-image {
-  width: 100vw;
+  width: 75vw;
   height: auto;
   display: block;
 }
