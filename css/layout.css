@@ -72,9 +72,9 @@ body {
   flex-basis: auto;
 }
 
-.GIS-header-image {
-  width: 50%;
-  height: 10%;
+#GIS-header-image-container > .GIS-header-image {
+  width: 300px;
+  height: auto;
 }
 
 /* About Section */
