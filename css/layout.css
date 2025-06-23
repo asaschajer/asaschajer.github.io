@@ -63,7 +63,7 @@ body {
 
 #GIS-header-image-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
   flex-basis: 50%;
 }
