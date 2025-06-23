@@ -57,7 +57,21 @@ body {
   flex-basis: 50%;
 }
 
+/* GIS Header */
 
+
+
+#GIS-header-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: 50%;
+}
+
+.portfolio-header-image {
+  width: 100%;
+  height: auto;
+}
 
 /* About Section */
 
