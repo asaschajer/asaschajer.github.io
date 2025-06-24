@@ -249,24 +249,24 @@ body {
   }
 
   body {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   h1 {
-    font-size: 46px;
+    font-size: 44px;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   p,
   li {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.7;
   }
 }
