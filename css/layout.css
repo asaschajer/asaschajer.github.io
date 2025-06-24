@@ -15,7 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /* New background image styles */
-  background-image: url('../assets/images/your-background.jpg'); /* update this path */
+  background-image: url("./assets/icons/background.jpg"); /* update this path */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
