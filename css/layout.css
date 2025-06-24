@@ -249,24 +249,24 @@ body {
   }
 
   body {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   h1 {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   h3 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   p,
   li {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.7;
   }
 }
@@ -279,7 +279,7 @@ body {
   }
 
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -290,7 +290,7 @@ body {
   }
 
   body {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 
@@ -302,13 +302,6 @@ body {
 
   body {
     font-size: 16px;
-  }
-}
-
-/* Medium devices (1000px and below) */
-@media only screen and (max-width: 1000px) {
-  #main-wrapper {
-    padding: 40px 40px;
   }
 }
 
