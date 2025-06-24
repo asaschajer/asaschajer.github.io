@@ -24,9 +24,9 @@ body {
 
 #main-wrapper {
   background-color: white;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 40px 60px; /* Adjust side padding instead of big margins */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -35,7 +35,7 @@ body {
 /* Main Page Layout */
 
 #main-content {
-  margin: 225px 425px;
+  margin-top: 225px; /* Keep vertical spacing */
   display: flex;
   flex-direction: column;
   gap: 96px;
