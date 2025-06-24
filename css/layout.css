@@ -241,31 +241,35 @@ body {
     }
 
 
-/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
+/* Extra Extra large devices (1600px and below) */
 @media only screen and (max-width: 1600px) {
-  #main-content {
-    margin: 225px 275px;
+  #main-wrapper {
+    padding: 40px 80px;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and below) */
+/* Extra large devices (1200px and below) */
 @media only screen and (max-width: 1200px) {
-  #main-content {
-    margin: 225px 175px;
+  #main-wrapper {
+    padding: 40px 60px;
   }
 }
 
-/* Large devices (laptops/desktops, 1000px and below) */
+/* Large devices (1000px and below) */
 @media only screen and (max-width: 1000px) {
-  #main-content {
-    margin: 225px 75px;
+  #main-wrapper {
+    padding: 40px 40px;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 800px and below) */
+/* Small devices (800px and below) */
 @media only screen and (max-width: 800px) {
+  #main-wrapper {
+    padding: 30px 20px;
+  }
+
   #main-content {
-    margin: 150px 50px;
+    margin-top: 150px;
   }
 
   #portfolio-header {
@@ -277,10 +281,14 @@ body {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and below) */
+/* Extra small devices (600px and below) */
 @media only screen and (max-width: 600px) {
+  #main-wrapper {
+    padding: 20px 10px;
+  }
+
   #main-content {
-    margin: 125px 20px;
+    margin-top: 125px;
   }
 
   .project-card {
