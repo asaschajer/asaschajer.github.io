@@ -186,6 +186,18 @@ body {
   gap: 34px;
 }
 
+#Goal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Goal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
 #Target {
   display: flex;
   flex-direction: column;
