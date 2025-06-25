@@ -273,7 +273,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background-color: #007bff;
+  background-color: #3a7ca5;
   color: white;
   border-radius: 4px;
   text-decoration: none;
@@ -281,7 +281,7 @@ body {
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #3a7ca5;
 }
 
 .button-text {
