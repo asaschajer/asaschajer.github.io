@@ -101,17 +101,18 @@ body {
 /* HEADER */
 #portfolio-header {
   display: flex;
-  gap: 20px;
   align-items: center;
+  justify-content: space-between; /* optional */
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 #portfolio-header-image-container,
 #portfolio-header-text-container {
-  flex-basis: 50%;
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 20px;
 }
 
 .portfolio-header-image {
@@ -206,7 +207,36 @@ body {
 .project-details-content,
 .Goal-content,
 .Target-content,
-.Indicator-content,
+.Indicator-content,<div id="portfolio-header">
+			<div id="portfolio-header-image-container">
+			  <!-- 
+				TODO
+
+				- Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+				- Change the number to point to your Unemployable & replace the OpenSea link with your own
+				- If you aren't using an Unemployable as your image, remove the entire "a" element
+			  -->
+			  <img src="./assets/images/About_me.jpg" class="portfolio-header-image">
+			</div>
+
+			  <!-- 
+				TODO
+
+				- Change the main-title to whatver you want DONE
+				- Change the body-text after that to a quick introduction to what you do DONE
+				- Edit the button text if you feel like it. It will link to the projects section below.
+			  -->
+			<div id="portfolio-header-text-container">
+				<div class="header-text">
+				  <span class="main-title">Aurore Schajer.</span>
+				  <div class="body-text">I’m a currently a first year student at University College Utrecht, partaking in a GIS laboratory module.</div>
+				</div>
+				<a class="button" id="my-work-link">
+				  <span class="button-text">Check out my projects</span> 
+				  <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+				</a>
+			</div>
+		  </div>
 .project-gallery-content {
   display: flex;
   flex-wrap: wrap;
