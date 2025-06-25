@@ -22,21 +22,22 @@ body {
   background-repeat: no-repeat;
 }
 
+
 #main-wrapper {
   background-color: white;
   max-width: 1200px;
   margin: 60px auto;
-  padding: 40px 60px; /* Adjust side padding instead of big margins */
+  padding: 40px 5vw; /* this makes side padding responsive */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 
 
+
 /* Main Page Layout */
 
 #main-content {
-  margin-top: 225px; /* Keep vertical spacing */
   display: flex;
   flex-direction: column;
   gap: 96px;
@@ -135,6 +136,7 @@ body {
   display: flex;
   gap: 34px 16px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
     /* Project Cards */
