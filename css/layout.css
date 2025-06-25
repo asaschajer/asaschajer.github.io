@@ -25,8 +25,9 @@ body {
 #main-wrapper {
   background-color: white;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 60px auto;
   padding: 40px 60px; /* Adjust side padding instead of big margins */
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
