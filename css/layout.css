@@ -1,81 +1,73 @@
+/* GLOBAL RESET */
 * {
   box-sizing: border-box;
 }
 
-html {
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
-}
-
-body {
-  margin: 0;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  /* New background image styles */
-  background-image: url("../assets/images/background.jpg"); /* update this path */
+/* BACKGROUND */
+body {
+  background-image: url("../assets/images/background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-
+/* MAIN WRAPPER */
 #main-wrapper {
   background-color: white;
   max-width: 1200px;
   margin: 60px auto;
-  padding: 40px 5vw; /* this makes side padding responsive */
+  padding: 40px 5vw;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
-/* Main Page Layout */
-
+/* MAIN CONTENT */
 #main-content {
+  margin-top: 225px;
   display: flex;
   flex-direction: column;
   gap: 96px;
 }
 
-
-
-
-/* Portfolio Header */
-
+/* HEADER */
 #portfolio-header {
   display: flex;
   gap: 20px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-#portfolio-header-image-container {
+#portfolio-header-image-container,
+#portfolio-header-text-container {
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  flex-basis: 50%;
+  gap: 34px;
 }
 
 .portfolio-header-image {
   width: 100%;
   height: auto;
-  border-radius: 8px; /* optional: soft corners */
+  border-radius: 8px;
 }
 
-#portfolio-header-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-  flex-basis: 50%;
-}
-
-/* GIS Header */
-
+/* GIS HEADER */
 #GIS-header {
   display: flex;
   justify-content: center;
@@ -87,218 +79,131 @@ body {
   width: 100%;
 }
 
-#GIS-header-image-container > .GIS-header-image {
+.GIS-header-image {
   width: 100%;
   height: auto;
-  max-width: 100%; /* ensure it doesn't overflow */
+  max-width: 100%;
   display: block;
-  border-radius: 8px; /* optional: soft corners */
+  border-radius: 8px;
 }
 
-/* About Section */
-
-#about-section {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.about-section-content {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-}
-
-/* About GIS Section */
-
-#GIS-section {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.GIS-section-content {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-}
-
-
-/* Project Section */
-
+/* ABOUT SECTION */
+#about-section,
+#GIS-section,
 #my-work-section {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
+.about-section-content,
+.GIS-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+/* PROJECT SECTION */
 .projects-container {
   display: flex;
-  gap: 34px 16px;
   flex-wrap: wrap;
+  gap: 34px 16px;
   justify-content: space-between;
 }
 
-    /* Project Cards */
+.project-card {
+  flex: 1 1 calc(33.333% - 16px);
+  max-width: calc(33.333% - 16px);
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
 
-    .project-card {
-      max-width: calc((100% - 32px) / 3);
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-    }
-
-    .project-card-text-container {
-      flex-direction: column;
-      display: flex;
-      gap: 16px
-    }
-
-    .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center;
-    }
-
-
-
-
-/* Project Pages */
-
-#project-header {
+.project-card-text-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.project-header-image {
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* PROJECT DETAIL PAGE */
+#project-header,
+#project-details,
+#Goal,
+#Target,
+#Indicator-details,
+#project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-header-image,
+.gallery-image {
   width: 100%;
   height: auto;
 }
 
-#project-details {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.project-details-content {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-}
-
-#Goal {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.Goal-content {
+.project-details-content,
+.Goal-content,
+.Target-content,
+.Indicator-content,
+.project-gallery-content {
   display: flex;
   flex-direction: column;
   gap: 34px;
 }
 
-#Target {
+.project-gallery-content {
+  flex-wrap: wrap;
+  gap: 34px 16px;
+}
+
+.gallery-image-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
-.Target-content {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
+.gallery-image-container.half-width {
+  width: calc((100% - 16px) / 2);
 }
 
-#Indicator-details {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.Indicator-content {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-}
-
-    /* Project Gallery */
-
-    #project-gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .project-gallery-content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 34px 16px;
-    }
-
-    .gallery-image-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .gallery-image-container.half-width {
-      width: calc((100% - 16px) / 2);
-    }
-
-    .gallery-image {
-      width: 100%;
-      height: auto;
-    }
-
-
-/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
-@media only screen and (max-width: 1600px) {
-  #main-content {
-    margin: 225px 275px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and below) */
-@media only screen and (max-width: 1200px) {
-  #main-content {
-    margin: 225px 175px;
-  }
-}
-
-/* Large devices (laptops/desktops, 1000px and below) */
+/* RESPONSIVE BREAKPOINTS */
 @media only screen and (max-width: 1000px) {
-  #main-content {
-    margin: 225px 75px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 800px and below) */
-@media only screen and (max-width: 800px) {
-  #main-content {
-    margin: 150px 50px;
-  }
-
   #portfolio-header {
     flex-direction: column;
   }
 
   .project-card {
-    max-width: calc((100% - 16px) / 2);
+    flex: 1 1 calc(50% - 8px);
+    max-width: calc(50% - 8px);
+  }
+
+  .gallery-image-container.half-width {
+    width: 100%;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
-  #main-content {
-    margin: 125px 20px;
+  .project-card {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
-  .project-card {
-    max-width: 100%;
+  #main-wrapper {
+    padding: 30px 4vw;
+  }
+
+  #main-content {
+    margin-top: 150px;
+    gap: 64px;
   }
 }
