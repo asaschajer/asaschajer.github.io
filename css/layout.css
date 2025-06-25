@@ -267,4 +267,29 @@ body {
 }
 
 
+.button {
+  padding: 6px 12px;
+  font-size: 0.875rem; /* smaller font size */
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #007bff; /* optional: customize button color */
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button-text {
+  font-size: 0.875rem;
+}
+
+.right-arrow-icon {
+  width: 16px;
+  height: 16px;
+}
 
