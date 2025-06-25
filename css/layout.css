@@ -267,15 +267,15 @@ body {
 }
 
 
-.button {
-  padding: 6px 12px;
-  font-size: 0.875rem; /* smaller font size */
+.button { 
+  padding: 4px 8px;
+  font-size: 0.75rem; /* even smaller font */
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  background-color: #007bff; /* optional: customize button color */
+  gap: 4px;
+  background-color: #007bff;
   color: white;
-  border-radius: 6px;
+  border-radius: 4px;
   text-decoration: none;
   transition: background 0.3s ease;
 }
@@ -285,11 +285,10 @@ body {
 }
 
 .button-text {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .right-arrow-icon {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
 }
-
