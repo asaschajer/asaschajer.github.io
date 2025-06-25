@@ -232,20 +232,6 @@ body {
 }
 
 /* RESPONSIVE BREAKPOINTS */
-@media only screen and (max-width: 1000px) {
-  #portfolio-header {
-    flex-direction: column;
-  }
-
-  .project-card {
-    flex: 1 1 calc(50% - 8px);
-    max-width: calc(50% - 8px);
-  }
-
-  .gallery-image-container.half-width {
-    width: 100%;
-  }
-}
 
 @media only screen and (max-width: 600px) {
   .project-card {
