@@ -205,7 +205,7 @@
 	// control that shows attribute info on hover
 	const info = L.control();
 
-	info.onAdd = function (map) {
+	info.onAdd = function (leaflet-map) {
 		this._div = L.DomUtil.create('div', 'info');
 		this.update();
 		return this._div;
@@ -219,7 +219,7 @@
 		this._div.innerHTML = `<h4>4.7.1 Extent to which global citizenship education and education for sustainable development are mainstreamed in curricula</h4>${contents}`;
 	};
 
-	info.addTo(map);
+	info.addTo(leaflet-map);
 
 
 	
@@ -266,7 +266,7 @@
 	const geojson = L.geoJson(nationData, {
 		style,
 		onEachFeature
-	}).addTo(map);
+	}).addTo(leaflet-map);
 
 	function resetHighlight(e) {
 		geojson.resetStyle(e.target);
@@ -291,7 +291,7 @@
 
 	const legend = L.control({position: 'bottomright'});
 
-	legend.onAdd = function (map) {
+	legend.onAdd = function (leaflet-map) {
 
 		const div = L.DomUtil.create('div', 'info legend');
 		const grades = [0, 47.1, 50, 60, 70, 80, 90];
@@ -311,7 +311,7 @@
 		return div;
 	};
 
-	legend.addTo(map);
+	legend.addTo(leaflet-map);
 
 </script>
 
