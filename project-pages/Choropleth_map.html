@@ -190,7 +190,7 @@
   id="leaflet-map"
   style="height: 500px; border: 1px solid #ccc; border-radius: 8px"
 ></div>
-
+<script type="text/javascript" src="dataqgis_percentage.js"></script>
 <script type="text/javascript">
   const map = L.map("leaflet-map").setView([10, 10], 2);
 
@@ -220,25 +220,16 @@
   info.addTo(map);
 
   // Color scale
-  function getColor(d) {
-    return d > 100
-      ? "#005a32"
-      : d > 90
-      ? "#238443"
-      : d > 80
-      ? "#41ab5d"
-      : d > 70
-      ? "#78c679"
-      : d > 60
-      ? "#addd8e"
-      : d > 50
-      ? "#d9f0a3"
-      : d > 47.1
-      ? "#f7fcb9"
-      : d > 0
-      ? "#ffffe5"
-      : "#f7fcf5";
-  }
+	function getColor(d) {
+		return d > 100 ? '#005a32' :
+			d > 90  ? '#238443' :
+			d > 80  ? '#41ab5d' :
+			d > 70  ? '#78c679' :
+			d > 60  ? '#addd8e' :
+			d > 50   ? '#d9f0a3' :
+			d > 47.1   ? '#f7fcb9' :
+			d > 0   ? '#ffffe5' : '#f7fcf5';
+	}
 
   function style(feature) {
     return {
