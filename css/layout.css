@@ -254,78 +254,31 @@ body {
     }
 
 
-/* Ultra-wide screens (larger than 1920px) */
-@media only screen and (min-width: 1921px) {
-  #main-wrapper {
-    padding: 80px 160px;
-    max-width: 1600px;
-  }
-
-  body {
-    font-size: 18px;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  h3 {
-    font-size: 24px;
-  }
-
-  p,
-  li {
-    font-size: 18px;
-    line-height: 1.7;
-  }
-}
-
-/* Extra Extra large devices (1600px to 1920px) */
-@media only screen and (min-width: 1601px) and (max-width: 1920px) {
-  #main-wrapper {
-    padding: 60px 120px;
-    max-width: 1400px;
-  }
-
-  body {
-    font-size: 16px;
-  }
-}
-
-/* Extra large devices (1200px to 1600px) */
+/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
-  #main-wrapper {
-    padding: 40px 80px;
-  }
-
-  body {
-    font-size: 16px;
-  }
-}
-
-/* Large devices (below 1200px) */
-@media only screen and (max-width: 1200px) {
-  #main-wrapper {
-    padding: 40px 60px;
-  }
-
-  body {
-    font-size: 16px;
-  }
-}
-
-/* Small devices (800px and below) */
-@media only screen and (max-width: 800px) {
-  #main-wrapper {
-    padding: 30px 20px;
-  }
-
   #main-content {
-    margin-top: 150px;
+    margin: 225px 275px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and below) */
+@media only screen and (max-width: 1200px) {
+  #main-content {
+    margin: 225px 175px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1000px and below) */
+@media only screen and (max-width: 1000px) {
+  #main-content {
+    margin: 225px 75px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 800px and below) */
+@media only screen and (max-width: 800px) {
+  #main-content {
+    margin: 150px 50px;
   }
 
   #portfolio-header {
@@ -337,20 +290,13 @@ body {
   }
 }
 
-/* Extra small devices (600px and below) */
+/* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
-  #main-wrapper {
-    padding: 20px 10px;
-  }
-
   #main-content {
-    margin-top: 125px;
+    margin: 125px 20px;
   }
 
   .project-card {
     max-width: 100%;
   }
 }
-
-
-
