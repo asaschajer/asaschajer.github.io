@@ -101,9 +101,9 @@ body {
 /* HEADER */
 #portfolio-header {
   display: flex;
-  align-items: center;
-  justify-content: space-between; /* optional */
-  flex-wrap: wrap;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center;     /* Center horizontally */
+  text-align: center;      /* Center text inside */
   gap: 20px;
 }
 
