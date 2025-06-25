@@ -161,6 +161,7 @@ body {
 }
 
 .project-gallery-content {
+  display: flex;
   flex-wrap: wrap;
   gap: 34px 16px;
 }
