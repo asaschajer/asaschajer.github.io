@@ -209,8 +209,9 @@ body {
 .Indicator-content,
 .project-gallery-content {
   display: flex;
-  flex-direction: column;
-  gap: 34px;
+  flex-wrap: wrap;
+  gap: 34px 16px;
+  justify-content: space-between; /* optional: controls horizontal alignment */
 }
 
 .project-gallery-content {
