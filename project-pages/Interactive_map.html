@@ -28,52 +28,44 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 	
 	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<body>
+	<div id="main-wrapper">
+    <!-- NAVBAR -->
+		<div class="navbar">
+		  <a class="nav-title-link" href="../index.html">
+			<!-- 
+			  TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+			  (this should be the same across all pages)
+			 -->
+			<span class="nav-title">GIS portfolio</span>
+			<!-- 
+			  TODO - Change the email after 'mailto:' to your email address for contact 
+			
+			  (this should be the same across all pages)
+			-->
+			<a class="button" href="mailto:aurore.schajer@outlook.fr">
+			  <span class="button-text">Contact Me</span>
+			</a>
+		  </a>
+		</div>
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
+		<!-- MAIN PAGE CONTENT -->
+		<div id="main-content">
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+		  <!-- PROJECT HEADER -->
+		  <div id="project-header">
+			  <!-- 
+				TODO
 
-						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="vector.html">Vector</a></li>
-							<li><a href="choropleth.html">Choropleth</a></li>
-							<li><a href="landuse.html">Land Cover</a></li>
-							<li><a href="DEM.html">DEM</a></li>
-							<li><a href="gee.html">Carbon Sequestration</a></li>
-							<li><a href="about.html">About</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Choropleth Map</h1>
-							<p>Describe the map - SDG here.</p>
-							<span class="image main"><img src="images/choropleth15_1_1.png" alt="" /></span>
-							
-							<h1>Leaflet</h1>
-							<p>We made this example in class on day 2</p>
+				- Change the 'main-title' text to the name of your project
+				- Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+				- Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+			  -->
+			<div class="main-title">Choropleth map</div>
+			<div class="body-text">This assignment involved creating a choropleth map using open-source SDG data to illustrate indicator 4.7.1. which represents the extent to which global citizenship education and education for sustainable development are mainstreamed in curricula, focusing on the year 2020. </div>
+			<image class="project-header-image" src="../assets/images/choropleth_map_image.png">
+		  </div>
 					
 					<!-- UPDATE - add your leaflet code here! I already added the necessary headers - make sure you move your js file into the root directory too -->
 							<div id='map'></div>
@@ -201,12 +193,9 @@
 	legend.addTo(map);
 
 </script>
-						<!-- extra credit - make your own esri online map- otherwise delete this section -->
-						<h1>ArcGIS Online</h1>
-							<p>Here is my choropleth map I made with real UN SDG indicator data. During a live in class demo in 2024. It is interactive but not great. You can make your own version using Esri online</p>
-						<iframe src="https://uni-utrecht.maps.arcgis.com/apps/instant/basic/index.html?appid=e0472c006c72436fbd8a6be0b1814603" width="100%" height="800px" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
-						
-						
+
+	
+				
 						</div>
 					</div>
 
